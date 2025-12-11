@@ -2,7 +2,7 @@ import { Star, Heart, Cloud, Moon, Sparkles } from "./decorative-elements"
 
 export function PresentationPage() {
   return (
-    <div className="print-page w-[210mm] h-[297mm] mx-auto bg-white relative overflow-hidden p-8">
+    <div className="pdf-page print-page bg-white relative overflow-hidden p-8">
       {/* Decorative corners */}
       <Cloud className="absolute top-4 left-4 w-16 h-16 text-[var(--blue)]/30" />
       <Star className="absolute top-4 right-4 w-10 h-10 text-[var(--yellow)]" filled />

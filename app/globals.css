@@ -131,6 +131,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -160,4 +161,31 @@
   .no-print {
     display: none !important;
   }
+}
+
+/* Responsive A4 Page Wrapper */
+.pdf-page {
+  width: 210mm;
+  height: 297mm;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+@media screen and (max-width: 210mm) {
+  /* 
+     We no longer need to force width: 100% here because we are using 
+     a JS-based scaling wrapper (ResponsivePageWrapper) that handles 
+     the scaling while preserving the exact A4 dimensions.
+     
+     This prevents content reflow issues.
+  */
+}
+
+/* Ensure body allows scrolling on mobile */
+body {
+  overflow-x: hidden;
+  min-width: 320px;
 }

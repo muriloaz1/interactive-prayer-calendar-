@@ -45,7 +45,7 @@ function WeekRow({ weekNumber }: { weekNumber: number }) {
 
 export function WeeklyCalendar() {
   return (
-    <div className="print-page w-[210mm] h-[297mm] mx-auto bg-white relative overflow-hidden p-6">
+    <div className="pdf-page print-page bg-white relative overflow-hidden p-6">
       {/* Background decorations */}
       <Cloud className="absolute top-2 left-6 w-10 h-10 text-[var(--blue)]/20" />
       <Moon className="absolute top-4 right-10 w-8 h-8 text-[var(--yellow)]/40" />

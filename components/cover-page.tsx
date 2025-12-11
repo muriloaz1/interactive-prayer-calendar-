@@ -2,7 +2,7 @@ import { Star, Moon, Cloud, Heart, Sparkles } from "./decorative-elements"
 
 export function CoverPage() {
   return (
-    <div className="print-page w-[210mm] h-[297mm] mx-auto bg-gradient-to-b from-[var(--blue)] via-[var(--lilac)] to-[var(--pink)] relative overflow-hidden flex flex-col items-center justify-center p-8">
+    <div className="pdf-page print-page bg-gradient-to-b from-[var(--blue)] via-[var(--lilac)] to-[var(--pink)] relative overflow-hidden flex flex-col items-center justify-center p-8">
       {/* Decorative elements */}
       <Star className="absolute top-8 left-12 w-8 h-8 text-[var(--yellow)]" filled />
       <Star className="absolute top-16 right-16 w-6 h-6 text-[var(--yellow)]" filled />
@@ -25,7 +25,7 @@ export function CoverPage() {
       </div>
 
       {/* Main content */}
-      <div className="text-center z-10 bg-white/90 rounded-3xl p-10 shadow-2xl max-w-[160mm]">
+      <div className="text-center z-10 bg-white/90 rounded-3xl p-10 shadow-2xl max-w-[90%] w-full sm:w-auto">
         {/* Calendar icon illustration */}
         <div className="mb-6 flex justify-center">
           <div className="relative">

@@ -4,7 +4,7 @@ export function MonthlyCalendar() {
   const days = Array.from({ length: 31 }, (_, i) => i + 1)
 
   return (
-    <div className="print-page w-[210mm] h-[297mm] mx-auto bg-white relative overflow-hidden p-6">
+    <div className="pdf-page print-page bg-white relative overflow-hidden p-6">
       {/* Background decorations */}
       <Cloud className="absolute top-2 right-8 w-12 h-12 text-[var(--blue)]/20" />
       <Moon className="absolute top-4 left-8 w-10 h-10 text-[var(--yellow)]/40" />
